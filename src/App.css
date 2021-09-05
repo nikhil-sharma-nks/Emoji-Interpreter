@@ -7,11 +7,14 @@ body {
 }
 
 input {
-  margin-top: 20px;
+  margin: 20px;
   padding: 15px;
   width: 30%;
-  background: lightgrey;
+  background: white;
   text-align: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
 }
 
 .App {
@@ -26,6 +29,7 @@ input {
 .meaning {
   margin: 20px auto;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .clearButton {
@@ -37,8 +41,8 @@ input {
   );
 }
 .clearButton {
-  margin: 10px;
-  padding: 15px 45px;
+  margin: 20px;
+  padding: 20px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -47,6 +51,7 @@ input {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   border: none;
+
   /* display: block; */
 }
 
@@ -54,4 +59,40 @@ input {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+.description {
+  font-size: 1.3rem;
+}
+
+.emoji-showcase {
+  width: 50%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.emoji-showcase-element {
+  margin: 10px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  /* align-items: center;
+  justify-content: center; */
+  justify-self: center;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.emoji-showcase-element:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px black;
+}
+
+.input {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }

@@ -1,3 +1,31 @@
+const showcaseEmoji = {
+  "😀": "grinning face",
+  "😃": "grinning face with big eyes",
+  "😄": "grinning face with smiling eyes",
+  "😁": "beaming face with smiling eyes",
+  "😆": "grinning squinting face",
+  "😅": "grinning face with sweat",
+  "🤣": "rolling on the floor laughing",
+  "😂": "face with tears of joy",
+  "🙂": "slightly smiling face",
+  "🙃": "upside-down face",
+  "😉": "winking face",
+  "😊": "smiling face with smiling eyes",
+  "😇": "smiling face with halo",
+  "🥰": "smiling face with hearts",
+  "🤩": "star-struck",
+  "😘": "face blowing a kiss",
+  "😗": "kissing face",
+  "🤫": "shushing face",
+  "🤔": "thinking face",
+  "😋": "face savoring food",
+  "🤥": "lying face",
+  "😌": "relieved face",
+  "😔": "pensive face",
+  "😪": "sleepy face",
+  "🤤": "drooling face",
+};
+
 const emojisData = {
   "😀": "grinning face",
   "😃": "grinning face with big eyes",
@@ -4752,4 +4780,4 @@ const emojisData = {
   "🏴󠁧󠁢󠁷󠁬󠁳󠁿": "flag: Wales",
 };
 
-export default emojisData;
+export { emojisData, showcaseEmoji };

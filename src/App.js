@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import emojisData from "./emojiData";
+import { emojisData, showcaseEmoji } from "./emojiData";
 
 function App() {
   const [emoji, setEmoji] = useState("");
@@ -12,7 +12,11 @@ function App() {
     // const inputEmoji = inputValue[inputValue.length - 2];
     setEmoji(inputValue);
     console.log(emoji);
-    const emojiMeaning = emojisData[inputValue];
+    searchMeaning(inputValue);
+  }
+
+  function searchMeaning(emoji) {
+    const emojiMeaning = emojisData[emoji];
     if (emojiMeaning) {
       setMeaning(emojiMeaning);
       console.log(emojiMeaning);
@@ -21,6 +25,12 @@ function App() {
         "Either we don't have this emoji in our database or what you entered is not an emoji. Please input a single emoji at a time"
       );
     }
+  }
+
+  function emojiClickHandler(event) {
+    console.log(event.target.innerText);
+    setEmoji(event.target.innerText);
+    searchMeaning(event.target.innerText);
   }
 
   function handleClearOnClick() {
@@ -36,7 +46,7 @@ function App() {
       <div className="description">
         There are thousands of emoji available, but I am sure sometimes you
         don't know what exactly do the mean. So I have compiled thousands of
-        emoji and therir meaning to help you!
+        emoji and their meaning to help you!
       </div>
       <div className="input">
         <input
@@ -49,7 +59,22 @@ function App() {
           Clear
         </button>
       </div>
-      <div className="meaning">{meaning}</div>
+      <div className="meaning">{meaning.toUpperCase()}</div>
+      <div className="showcase">
+        <div className="emoji-showcase">
+          {Object.keys(showcaseEmoji).map((element) => {
+            return (
+              <div
+                key={element}
+                className="emoji-showcase-element"
+                onClick={emojiClickHandler}
+              >
+                {element}
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
