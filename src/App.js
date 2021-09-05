@@ -75,6 +75,51 @@ function App() {
           })}
         </div>
       </div>
+      <footer className="main-footer">
+        <div className="footer-content container">
+          <p className="footer-text">
+            Made with ❤ by Nikhil <br />
+          </p>
+          <div className="social">
+            <a
+              href="https://www.linkedin.com/in/nikhil-sharma-nks/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin fa-3x" />
+            </a>
+            <a
+              href="https://github.com/nikhil-sharma-nks"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-github fa-3x" />
+            </a>
+            <a
+              href="https://twitter.com/wannabe_nikhil"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-twitter fa-3x" />
+            </a>
+            <a
+              href="https://www.facebook.com/nikhilshawarma/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <i className="fab fa-facebook fa-3x" />
+            </a>
+            <a
+              href="https://www.instagram.com/nikhil.shawarma/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-instagram fa-3x" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
