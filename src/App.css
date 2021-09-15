@@ -152,15 +152,11 @@ input {
     width: 80%;
     background: white;
     text-align: center;
-    /* border: none; */
+    border: none;
     border-radius: 20px;
     font-size: 1.2rem;
   }
 
-  .clearButton {
-    background-image: linear-gradient(to botton, #9bf8f5, #13e3ff);
-    text-align: center;
-  }
   .clearButton {
     width: 40%;
     margin: 20px auto;
