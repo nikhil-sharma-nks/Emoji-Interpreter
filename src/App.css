@@ -125,3 +125,92 @@ input {
   background-color: white;
   cursor: pointer;
 }
+
+@media (max-width: 540px) {
+  body {
+    overflow-x: hidden;
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    margin: 20px;
+    padding: 15px;
+    width: 80%;
+    background: white;
+    text-align: center;
+    /* border: none; */
+    border-radius: 20px;
+    font-size: 1.2rem;
+  }
+
+  .clearButton {
+    background-image: linear-gradient(to botton, #9bf8f5, #13e3ff);
+    text-align: center;
+  }
+  .clearButton {
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px 25px;
+    transition: none;
+    background-size: 50px;
+    border-radius: 10px;
+  }
+
+  .meaning {
+    width: 80%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .emoji-showcase {
+    width: 100%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+  }
+
+  .emoji-showcase-element {
+    margin: 5px;
+    padding: 13px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    transition: none;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+    margin: 10px auto;
+  }
+}
