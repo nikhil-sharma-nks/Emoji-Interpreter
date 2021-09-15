@@ -9,7 +9,6 @@ function App() {
   );
   function inputOnChangeHandler(event) {
     const inputValue = event.target.value.trim();
-    // const inputEmoji = inputValue[inputValue.length - 2];
     setEmoji(inputValue);
     console.log(emoji);
     searchMeaning(inputValue);

@@ -24,6 +24,7 @@ input {
 .description {
   width: 50%;
   margin: 20px auto;
+  font-size: 1.3rem;
 }
 
 .meaning {
@@ -59,10 +60,6 @@ input {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
-}
-
-.description {
-  font-size: 1.3rem;
 }
 
 .emoji-showcase {
@@ -169,7 +166,6 @@ input {
     margin: 20px auto;
     padding: 10px 25px;
     transition: none;
-    background-size: 50px;
     border-radius: 10px;
   }
 
